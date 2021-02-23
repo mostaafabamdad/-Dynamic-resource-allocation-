@@ -1,0 +1,6 @@
+function U=pf(E,d)
+n=size(d,2);
+jam=sum(d);
+for i=1:n
+U(i)=E*d(i)/jam;
+end
