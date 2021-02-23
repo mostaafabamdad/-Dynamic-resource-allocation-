@@ -1,0 +1,21 @@
+function q=mmf(E,d)
+n=size(d,2);
+f=E/n;
+count=0;
+for i=1:n
+    if (d(i)<=f)
+        s(i)=f-d(i);
+        count=count+1;
+    end
+end 
+jam=sum(s);
+r=jam/(n-count);
+w=f+r;
+for j=1:n
+    if (d(j)<=w)
+        q(j)=d(j);
+    else
+       q(j)=w;
+    end
+      
+end 
