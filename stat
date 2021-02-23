@@ -1,0 +1,5 @@
+function u=stat(sh_v,d)   
+n=length(d);
+for i=1:n
+    u(i)=sh_v(i)/d(i);
+end
