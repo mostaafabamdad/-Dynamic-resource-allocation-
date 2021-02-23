@@ -1,0 +1,11 @@
+function Z=psi(d,sh_v)
+E=300;
+N=size(d,2);
+for i=1:N
+e1=sum(d)-d(i);
+e2=E-e1;
+min=max(e2,0);
+e3=sh_v-min(i);
+e4=d(i)-min(i);
+z(i)=e3(i)/e4(i);
+end
