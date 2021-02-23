@@ -1,0 +1,9 @@
+function ei=stat2(u,c)
+
+jam=sum(u);
+eis2=jam^2;
+for j=1:c
+    m(j)=u(j)^2;
+end
+eim= c*sum(m);
+ei=eis2/eim;
