@@ -1,0 +1,9 @@
+function p=psistat(d,E,sh_v)
+for i=1:10
+u(i)= sum(d)-d(i);
+y(i)=E-u(i);
+t(i)=max(y(i),0);
+q(i)=sh_v(i)-t(i);
+o(i)=d(i)-t(i);
+p(i)=q(i)/o(i);
+end
